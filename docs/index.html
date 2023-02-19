@@ -35,7 +35,6 @@
             </tr>
         </thead>
         <tbody>
-            <!-- 使用 Jekyll 标记读取 CSV 文件并渲染表格 -->
             {% for item in site.data."30-2627" %}
             <tr>
                 <td>{{ item.房间 }}</td>
@@ -43,9 +42,6 @@
                 <td>{{ item.时间 }}</td>
             </tr>
             {% endfor %}
-            <!-- {% for row in site.data."30-2627" %}
-            {{ row.房间 }} | {{ row.余额 }} | {{ row.时间 }}
-            {% endfor %} -->
         </tbody>
     </table>
 </body>
