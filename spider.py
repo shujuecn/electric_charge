@@ -48,7 +48,7 @@ def write_csv(result):
 
     with open(file_name, "a", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow([room, now_time, balance])
+        writer.writerow([room, balance, now_time])
         print("查询成功！")
 
 
