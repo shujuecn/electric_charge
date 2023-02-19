@@ -1,9 +1,9 @@
- - room_number: 30-2627
+ - room_number: '30-2627'
   balance: '60.188 元'
   time: "2023-02-19 22:32"
-- room_number: 30-2627
+- room_number: '30-2627'
   balance: '60.088 元'
   time: "2023-02-19 22:32"
-- room_number: 30-2627
+- room_number: '30-2627'
   balance: '60.038 元'
   time: "2023-02-19 22:31"
