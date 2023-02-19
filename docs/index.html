@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>查询结果</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>查询结果</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>寝室号</th>
+                <th>电费余额</th>
+                <th>查询时间</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 使用 Jekyll 标记读取 CSV 文件并渲染表格 -->
+            {% for item in site.data."30-2627" %}
+            <tr>
+                <td>{{ item.房间 }}</td>
+                <td>{{ item.余额 }}</td>
+                <td>{{ item.时间 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>
