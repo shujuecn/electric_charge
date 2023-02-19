@@ -4,6 +4,7 @@
 import requests
 from lxml import etree
 import time
+import csv
 
 
 def balance_query(room):
@@ -46,7 +47,9 @@ def write_csv(result):
     file_name = f"./_data/{room}.csv"
 
     with open(file_name, "a", newline="") as f:
-        f.write(f"{room}, {balance}, {now_time}\n")
+        writer = csv.writer(f)
+        writer.writerow([room, now_time, balance])
+        print("查询成功！")
 
 
 def main():
